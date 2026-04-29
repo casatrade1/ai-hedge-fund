@@ -145,7 +145,7 @@ class FlowCreateRequest(BaseModel):
     name: str = Field(..., min_length=1, max_length=200)
     description: Optional[str] = None
     nodes: List[Dict[str, Any]] = Field(default_factory=list)
-    edges: List[Dict[str, Any]] = Field(default_factory=list
+    edges: List[Dict[str, Any]] = Field(default_factory=list)
     viewport: Optional[Dict[str, Any]] = None
     data: Optional[Dict[str, Any]] = None
     is_template: bool = False
